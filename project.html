@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Your Name | Data Science Portfolio">
+    <title>Projects | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <header>
+        <h1>My Projects</h1>
+        <p>Explore my work in data science, machine learning, and AI.</p>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <!-- PROJECT 1 -->
+        <div class="project">
+            <h3>📊 Smart Audit - AI Compliance Automation</h3>
+            <p>Developed an SGD classifier to improve column header classification accuracy to 96%, automating compliance workflows.</p>
+            <button onclick="toggleDetails('project1')">View More</button>
+            <div id="project1" class="details" style="display: none;">
+                <p><strong>Tools:</strong> Python, Scikit-learn, AWS Lambda</p>
+                <p><strong>
