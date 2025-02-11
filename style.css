@@ -339,6 +339,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2rem;
+  justify-content: flex-start;
 }
 
 article {
